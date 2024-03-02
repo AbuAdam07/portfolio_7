@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <title>Dae</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <span class="span1">Free Shipping on US Orders Over $60</span>
+        </div>
+    </header>
+    <section class="navbar">
+        <div class="container">
+            <div class="nav_flex">
+                <div class="flex_left">
+                    <ul>
+                        <li><a href="">Shop</a></li>
+                        <li><a href="">The Edit</a></li>
+                        <li><a href="">Our Story</a></li>
+                        <li><a href="">Reviews</a></li>
+                    </ul>
+                </div>
+                <img src="images/logo.png" alt="Dae" class="nav_img">
+                <a class="menu_btn_small"><img src="images/berger.svg" alt="" class="sm1"></a>
+                <div class="nav_right">
+                    <p class="p_nav">Account</p>
+                    <img src="images/bag.svg" alt="Bag" class="nav_im_right">
+                </div>
+            </div>
+        </div>
+    </section>
+        <div class="sidebar">
+            <div class="mobile_menu">
+            <div class="flex_left_m">
+                <img src="images/logo.png" alt="CloudBudget" class="cloud_logo_m">
+            </div>
+            <ul class="ul_flex2">
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">The Edit</a></li>
+              <li><a href="#">Our Story</a></li>
+              <li><a href="#">Reviews</a></li>
+            </ul>
+            <a href="https://t.me/abuadam07" class="mobile_a"><button class="mobile_menu_btn" id="mobile_menu_btn">Message me</button></a>
+            <button class="mobile_menu_btn close_btn">Close</button>
+          </div>
+        </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuBtn = document.querySelector('.menu_btn_small');
+            const sidebar = document.querySelector('.sidebar');
+            const closeBtn = document.querySelector('.close_btn'); 
+        
+            menuBtn.addEventListener('click', function() {
+                sidebar.classList.add('active');
+            });
+        
+            closeBtn.addEventListener('click', function() {
+                sidebar.classList.remove('active'); 
+            });                                      
+        });
+            </script>
+</body>
+</html>
