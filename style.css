@@ -111,6 +111,9 @@ header .container{
 .menu_btn_small{
     display: none;
 }
+.mobile_menu_btn{
+    cursor: pointer;
+}
 @media screen and (max-width:1024px){
     .flex_left ul li a{
         font-size:  1em;
@@ -202,5 +205,240 @@ header .container{
     }
     .ul_flex2 li a{
         margin-left: -35%;
+    }
+}
+/* BG */
+.bg .container{
+    margin-top: 0.5%;
+    background-image: url(images/bg.png);
+    background-size: cover;
+    background-position: center center;
+    min-height: 435px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.a_bg {
+    text-decoration: none;
+    color: #FFF;
+    background: var(--color2);
+    padding: 13px 20px;
+    margin-top: 19%;
+    font-size: 1.15em;
+}
+.a_bg:hover{
+    background: var(--color1);
+    color: var(--color2);
+}
+@media screen and (max-width:750px){
+    .a_bg{
+        font-size: 1em;
+        margin-top: 35%;
+    }
+    @media screen and (max-width:360px){
+        .a_bg{
+            font-size: 0.85em;
+            margin-top: 65%;
+        }
+    }
+}
+/* Mini-text */
+.mini_text .container {
+    background: var(--color4);
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    min-height: 304px;
+}
+.mini_p1 {
+    margin-top: 5%;
+    margin-left: 5%;
+    font-size: 1.25em;
+    text-transform: uppercase;
+}
+.mini_p2 {
+    margin-left: 5%;
+    font-size: 1.85em;
+    margin-top: 1%;
+    text-transform: uppercase;
+}
+.mini_p3 {
+    margin-left: 5%;
+}
+@media screen and (max-width:1024px){
+    .mini_p1 {
+        margin-top: 7.5%;
+        font-size: 1.1em;
+    }
+    .mini_p2{
+        font-size: 1.6em;
+    }
+    .mini_p3{
+
+    }
+}
+@media screen and (max-width:750px){
+    .mini_p1{
+        margin-top: 11.5%;
+        font-size: 1em;
+    }
+    .mini_p2{
+        font-size: 1.5em;
+        margin-top: 2%;
+    }
+
+}
+@media screen and (max-width:500px){
+    .mini_p1{
+        margin-top: 15%;
+        font-size: 0.85em;
+    }
+    .mini_p2{
+        font-size: 1.25em;
+        margin-top: 4%;
+    }
+}
+@media screen and (max-width:360px){
+    .mini_p1{
+        margin-top: 30%;
+        font-size: 0.8em;
+    }
+    .mini_p2{
+        font-size: 1.15em;
+        margin-top: 5%;
+    }
+}
+/* PICK */
+.pick {
+}
+.pick_p {
+    margin-top: 3%;
+    text-align: center;
+    color: var(--color2);
+    font-size: 1.5em;
+}
+.pick_flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5.5% ;
+    margin-top: 3.5%;
+}
+.pick_item {
+}
+.pick_img {
+}
+.p1_pick_flex {
+    color: var(--color2);
+    font-size: 1em;
+    text-transform: uppercase;
+    margin-top: 3%;
+}
+.p2_pick_flex {
+    color: var(--color2);
+    margin-top: -1.5%;
+}
+@media screen and (max-width:500px){
+    .pick_p {
+        margin-top: 5%;
+        font-size: 1.25em;
+}
+.pick_flex{
+    gap: 0;
+}
+.pick_img {
+    margin: 0 auto;
+    width: 90%;
+    margin-left: 5%;
+}
+.p1_pick_flex{
+    font-size: 0.85em;
+    margin-left: 10%;
+}
+.p2_pick_flex {
+    font-size: 0.75em;
+    margin-left: 10%;
+}
+}
+@media screen and (max-width:360px){
+    .p1_pick_flex{
+        font-size: 0.75em;
+    }
+    .p2_pick_flex {
+        font-size: 0.7em;
+    }
+}
+/* CANDLE */
+.candle .container{
+    display: flex;
+    flex-direction: column;
+    background-image: url(images/feel.png);
+    background-size: cover;
+    background-position: center center;
+    min-height: 414px;
+    max-width: 1219px;
+    margin-top: 6.2%;
+}
+.candle_text{
+
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background: var(--color2);
+    max-width: 1219px;
+    color: #FFF;
+    opacity: 0.75;
+    height: 30%;
+    margin-top: -6%;
+    padding-top: 0.65%;
+    padding-bottom: 0.75%;
+    margin-top: 27.5%;
+
+}
+.p1_candle {
+    font-size: 1.32em;
+    margin-left: 2.5%;
+    text-transform: uppercase;
+}
+.p2_candle {
+    margin-right: 2.5%;
+    font-size: 1.25em;
+}
+@media screen and (max-width:1024px){
+    .candle_text{
+        margin-top: 32.5%
+    }
+}
+@media screen and (max-width:750px){
+    .candle_text{
+        margin-top: 50%;
+        padding-bottom: 0%;
+        padding-top: 0%;
+        height: 25%;
+
+    }
+    .p1_candle {
+        font-size: 1em;
+    }
+    .p2_candle{
+        font-size: 0.85em;
+    }
+}
+@media screen and (max-width:500px){
+    .candle_text{
+        margin-top: 75%;
+    }
+    .p1_candle {
+        font-size: 0.75em;
+    }
+}
+@media screen and (max-width:360px){
+    .candle_text{
+        margin-top: 100%;
+    }
+    .p1_candle {
+        font-size: 0.85em;
+        margin-right: 5%;
     }
 }
